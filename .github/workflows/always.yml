@@ -1,0 +1,15 @@
+name: always runs
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello World!"
